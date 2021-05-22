@@ -1,0 +1,16 @@
+{
+    "name": "Svelte PWA Tailwind starter",
+    "short_name": "SveltePWAStarter",
+    "theme_color": "#5bd1d7",
+    "background_color": "#f6f5f5",
+    "display": "standalone",
+    "Scope": "/",
+    "start_url": "/",
+    "description": "A readable Hacker News app.",
+    "icons": [{
+        "src": "images/Svelte_Logo.png",
+        "sizes": "48x48",
+        "type": "image/png"
+      }
+    ]
+}
