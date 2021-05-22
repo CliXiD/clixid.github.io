@@ -1,5 +1,6 @@
 {
-  "name": "~TODO~",
+  "name": "clixid",
+  "homepage": "https://clixid.github.io/",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
