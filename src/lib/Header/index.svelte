@@ -17,7 +17,6 @@
 		<ul>
 			<li class:active={$page.path === '/'}><a sveltekit:prefetch href="/">Home</a></li>
 			<li class:active={$page.path === '/about'}><a sveltekit:prefetch href="/about">About</a></li>
-			<li class:active={$page.path === '/todos'}><a sveltekit:prefetch href="/todos">Todos</a></li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
@@ -25,7 +24,9 @@
 	</nav>
 
 	<div class="corner">
-		<!-- TODO put something else here? github link? -->
+		<a href="https://github.com/CliXiD">
+			<img alt="Khajonpot S." src="https://avatars.githubusercontent.com/u/26565011?s=48&v=4" />
+		</a>
 	</div>
 </header>
 
@@ -49,9 +50,12 @@
 	}
 
 	.corner img {
-		width: 2em;
-		height: 2em;
+		top: 1em;
+		width: 2.5em;
+		height: 2.5em;
 		object-fit: contain;
+		vertical-align: middle;
+		border-radius: 50%;
 	}
 
 	nav {
