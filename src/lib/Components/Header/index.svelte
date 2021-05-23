@@ -16,6 +16,7 @@
 		</svg>
 		<ul>
 			<li class:active={$page.path === '/'}><a sveltekit:prefetch href="/">Home</a></li>
+			<li class:active={$page.path.startsWith('/blogs')}><a sveltekit:prefetch href="/blogs">Blogs</a></li>
 			<li class:active={$page.path === '/about'}><a sveltekit:prefetch href="/about">About</a></li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -24,9 +25,6 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/CliXiD">
-			<img alt="Khajonpot S." src="https://avatars.githubusercontent.com/u/26565011?s=48&v=4" />
-		</a>
 	</div>
 </header>
 
