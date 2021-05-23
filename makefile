@@ -12,9 +12,6 @@ fix-layout:
 build:
 	rm -rf docs/*
 	npm run build
-	mv docs/_app docs/app
-	find docs -type f \( -iname "*.html" -or -iname "*.*s" \) -exec sed -i 's|/./_app|/_app|g'  {} +
-	find docs -type f \( -iname "*.html" -or -iname "*.*s" \) -exec sed -i 's/_app/app/g' {} +
 	find docs -type f \( -iname "*.html" -or -iname "*.*s" \) -exec sed -i 's/__layout/layout/g' {} +
 
 github-build: build fix-layout
