@@ -6,7 +6,7 @@
 		<link rel="manifest" href="/manifest.json" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>Home</title>
+		
 
 		
 
@@ -14,10 +14,10 @@
 		<link rel="modulepreload" href="/./app/chunks/vendor-dc4944ac.js">
 		<link rel="modulepreload" href="/./app/pages/layout.svelte-ad5202e3.js">
 		<link rel="modulepreload" href="/./app/chunks/svelte-logo-fb34cf26.js">
-		<link rel="modulepreload" href="/./app/pages/index.svelte-814803d2.js">
+		<link rel="modulepreload" href="/./app/pages/blogs/howto.svelte.md-173a8eab.js">
+		<link rel="modulepreload" href="/./app/chunks/index-1e43e0c5.js">
 		<link rel="stylesheet" href="/./app/assets/start-0826e215.css">
 		<link rel="stylesheet" href="/./app/assets/pages/layout.svelte-339dfa8c.css">
-		<link rel="stylesheet" href="/./app/assets/pages/index.svelte-a47133f8.css">
 
 		<script type="module">
 			import { start } from "/./app/start-08277988.js";
@@ -34,11 +34,11 @@
 					error: null,
 					nodes: [
 						import("/./app/pages/layout.svelte-ad5202e3.js"),
-						import("/./app/pages/index.svelte-814803d2.js")
+						import("/./app/pages/blogs/howto.svelte.md-173a8eab.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/",
+						path: "/blogs/howto",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -53,32 +53,28 @@
 <header class="svelte-1er07lm"><div class="corner svelte-1er07lm"><a href="https://kit.svelte.dev" class="svelte-1er07lm"><img src="/app/assets/svelte-logo.87df40b8.svg" alt="SvelteKit" class="svelte-1er07lm"></a></div>
 
 	<nav class="svelte-1er07lm"><svg viewBox="0 0 2 3" aria-hidden="true" class="svelte-1er07lm"><path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" class="svelte-1er07lm"></path></svg>
-<ul class="svelte-1er07lm"><li class="svelte-1er07lm active"><a sveltekit:prefetch href="/" class="svelte-1er07lm">Home</a></li>
-	<li class="svelte-1er07lm"><a sveltekit:prefetch href="/blogs" class="svelte-1er07lm">Blogs</a></li>
+<ul class="svelte-1er07lm"><li class="svelte-1er07lm"><a sveltekit:prefetch href="/" class="svelte-1er07lm">Home</a></li>
+	<li class="svelte-1er07lm active"><a sveltekit:prefetch href="/blogs" class="svelte-1er07lm">Blogs</a></li>
 	<li class="svelte-1er07lm"><a sveltekit:prefetch href="/about" class="svelte-1er07lm">About</a></li></ul>
 <svg viewBox="0 0 2 3" aria-hidden="true" class="svelte-1er07lm"><path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" class="svelte-1er07lm"></path></svg></nav>
 
 	<div class="corner svelte-1er07lm"></div>
 </header>
 
-<main class="svelte-1wxnjqg">
+<main class="svelte-1wxnjqg"><div class="grid grid-cols-5 gap-4"><h1 class="text-left col-span-4">How to edit?</h1>
+	<p class="inline-block justify-self-end">by: <a class="inline-block" href="https://github.com/CliXiD"><img class="w-14 inline-block rounded-full" alt="Khajonpot S." src="https://github.com/clixid.png"></a></p></div>
+<div class="grid grid-cols-5 gap-4"><div class="col-span-3"><h2>Code</h2>
+        <div class="shadow-md rounded-md bg-gray-100"><div slot="edit"><pre class="language-markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token font-matter yaml language-yaml">title: How to edit?
+author: CliXiD
+layout: repl</span>
+<span class="token punctuation">---</span></span>
 
-<section class="svelte-pmk38k"><h1 class="svelte-pmk38k"><div class="welcome svelte-pmk38k"><picture><source srcset="svelte-welcome.webp" type="image/webp">
-		<img src="svelte-welcome.png" alt="Welcome" class="svelte-pmk38k"></picture></div>
+![Svelte Logo]
 
-to your new<br>SvelteKit app
-	</h1>
-
-	<h2>try editing <strong>src/routes/index.svelte</strong></h2>
-
-	<div class="counter svelte-10ov3cu"><button aria-label="Decrease the counter by one" class="svelte-10ov3cu"><svg aria-hidden="true" viewBox="0 0 1 1" class="svelte-10ov3cu"><path d="M0,0.5 L1,0.5" class="svelte-10ov3cu"></path></svg></button>
-
-	<div class="counter-viewport svelte-10ov3cu"><div class="counter-digits svelte-10ov3cu" style="transform: translate(0, 0%)"><strong style="top: -100%" aria-hidden="true" class="svelte-10ov3cu">1</strong>
-	<strong class="svelte-10ov3cu">0</strong></div></div>
-
-	<button aria-label="Increase the counter by one" class="svelte-10ov3cu"><svg aria-hidden="true" viewBox="0 0 1 1" class="svelte-10ov3cu"><path d="M0,0.5 L1,0.5 M0.5,0 L0.5,1" class="svelte-10ov3cu"></path></svg></button>
-</div>
-</section></main>
+<span class="token url-reference url"><span class="token punctuation">[</span><span class="token variable">Svelte Logo</span><span class="token punctuation">]</span><span class="token punctuation">:</span> /images/howto/Svelte_Logo.png <span class="token string">"Svelte Logo"</span></span></code></pre></div></div></div>
+	<div class="col-span-2 content-center"><h2>Result</h2>
+<div class="shadow-md p-5 rounded-md bg-gray-100"><p><img src="/images/howto/Svelte_Logo.png" alt="Svelte Logo" title="Svelte Logo"></p></div></div></div></main>
 
 <footer class="svelte-1wxnjqg"><p>visit <a href="https://kit.svelte.dev" class="svelte-1wxnjqg">kit.svelte.dev</a> to learn SvelteKit</p>
 </footer>
